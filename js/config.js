@@ -13,9 +13,9 @@ const PASSWORD_CONFIG = {
 
 // 网站信息配置
 const SITE_CONFIG = {
-    name: 'LibreTV',
-    url: 'https://libretv.is-an.org',
-    description: '免费在线视频搜索与观看平台',
+    name: '啾啾TV',
+    url: 'https://cctv-csu.pages.dev/',
+    description: '啾啾之家',
     logo: 'image/logo.png',
     version: '1.0.3'
 };
