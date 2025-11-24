@@ -21,86 +21,13 @@ const SITE_CONFIG = {
 };
 
 // API站点配置
-const CONFIG = {
-  API_SITES: [
-    // --- HTTPS 源 (推荐，支持直接播放) ---
-    { name: "七七资源", url: "https://www.qiqidys.com/api.php/provide/vod" },
-    { name: "海外看|点播🪜", url: "https://haiwaikan.com/api.php/provide/vod/" },
-    { name: "360|点播", url: "https://360zy.com/api.php/provide/vod/" },
-    { name: "黑木耳|点播", url: "https://www.heimuer.tv/api.php/provide/vod" },
-    { name: "业余|点播", url: "https://yyff.540734621.xyz/api.php/provide/vod/" },
-    { name: "华为吧|点播", url: "https://hw8.live/api.php/provide/vod/" },
-    { name: "小黄人|点播", url: "https://iqyi.xiaohuangrentv.com/api.php/provide/vod/" },
-    { name: "牛牛|点播", url: "https://api.niuniuzy.me/api.php/provide/vod/" },
-    { name: "丫丫|点播", url: "https://cj.yayazy.net/api.php/provide/vod/" },
-    { name: "U酷|点播", url: "https://api.ukuapi.com/api.php/provide/vod/" },
-    { name: "豪华|点播", url: "https://hhzyapi.com/api.php/provide/vod" },
-    { name: "极速|点播", url: "https://jszyapi.com/api.php/provide/vod" },
-    { name: "四九|点播", url: "https://49zyw.com/api.php/provide/vod/" },
-    { name: "索尼|点播", url: "https://suoniapi.com/api.php/provide/vod/" },
-    { name: "ikun|点播", url: "https://ikunzyapi.com/api.php/provide/vod/" },
-    { name: "量子|点播", url: "https://cj.lziapi.com/api.php/provide/vod/" },
-    { name: "暴风|点播", url: "https://bfzyapi.com/api.php/provide/vod/" },
-    { name: "红牛|点播", url: "https://www.hongniuzy2.com/api.php/provide/vod/" },
-    { name: "飞速|点播", url: "https://www.feisuzyapi.com/api.php/provide/vod/" },
-    { name: "快看|点播", url: "https://www.kuaikan-api.com/api.php/provide/vod/" },
-    { name: "熊掌|点播", url: "https://xzcjz.com/api.php/provide/vod/" },
-    { name: "快车|点播", url: "https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/" },
-    { name: "樱花|点播", url: "https://m3u8.apiyhzy.com/api.php/provide/vod/" },
-    { name: "卧龙|点播", url: "https://collect.wolongzyw.com/api.php/provide/vod/" },
-    { name: "天翼|点播", url: "https://www.911ysw.top/tianyi.php/provide/vod/" },
-    { name: "虎牙|点播", url: "https://www.huyaapi.com/api.php/provide/vod/" },
-    { name: "百度|点播", url: "https://api.apibdzy.com/api.php/provide/vod/" },
-    { name: "飘零|点播", url: "https://p2100.net/api.php/provide/vod/" },
-    { name: "无尽|点播", url: "https://api.wujinapi.com/api.php/provide/vod/" },
-    { name: "速博|点播", url: "https://subocaiji.com/api.php/provide/vod/" },
-    { name: "魔都|点播", url: "https://caiji.moduapi.cc/api.php/provide/vod/" },
-    { name: "奇虎|点播", url: "https://caiji.qhzyapi.com/api.php/provide/vod/" },
-    { name: "火狐|点播", url: "https://hhzyapi.com/api.php/provide/vod/" },
-    { name: "新浪|点播", url: "https://api.xinlangapi.com/xinlangapi.php/provide/vod/" },
-    { name: "快云|点播", url: "https://www.kuaiyunzy.com/api.php/provide/vod/" },
-
-    // --- HTTP 源 (注意：如果您的网站开启了HTTPS，以下源可能需要代理才能访问) ---
-    { name: "红牛资源", url: "http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8" },
-    { name: "量子资源", url: "http://cj.lziapi.com/api.php/provide/vod/from/lzm3u8" },
-    { name: "开放电影", url: "http://vod-demo.onrender.com/pubdovod.php" },
-    { name: "优质资源库", url: "http://api.1080zyku.com/inc/api.php/provide/vod" },
-    { name: "39影视", url: "http://39kan.com/api.php/provide/vod" },
-    { name: "天堂资源", url: "http://vipmv.cc/api.php/provide/vod" },
-    { name: "乐活影视", url: "http://lehootv.com/api.php/provide/vod" },
-    { name: "唐人街", url: "http://tangrenjie.tv/api.php/provide/vod" },
-    { name: "酷点资源", url: "http://api.kuapi.cc/api.php/provide/vod" },
-    { name: "卧龙资源", url: "http://collect.wolongzyw.com/api.php/provide/vod" },
-    { name: "森林资源", url: "http://slapibf.com/api.php/provide/vod" },
-    { name: "影库资源网", url: "http://api.ykapi.net/api.php/provide/vod" },
-    { name: "快车资源", url: "http://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8" },
-    { name: "探探资源", url: "http://apittzy.com/api.php/provide/vod" },
-    { name: "闪电资源 (m3u8)", url: "http://sdzyapi.com/api.php/provide/vod/from/sdm3u8" },
-    { name: "闪电资源 (通用)", url: "http://sdzyapi.com/api.php/provide/vod/" },
-    { name: "金鹰资源", url: "http://jyzyapi.com/provide/vod/from/jinyingm3u8" },
-    { name: "光速资源", url: "http://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8" },
-    { name: "奥斯卡资源网", url: "http://aosikazy.com/api.php/provide/vod" },
-    { name: "老鸭资源采集", url: "http://api.apilyzy.com/api.php/provide/vod" },
-    { name: "U酷资源", url: "http://api.ukuapi.com/api.php/provide/vod" },
-    { name: "北斗星资源", url: "http://m3u8.bdxzyapi.com/api.php/provide/vod" },
-    { name: "樱花资源网", url: "http://m3u8.apiyhzy.com/api.php/provide/vod" },
-    { name: "飞速资源", url: "http://feisuzy.com/api.php/provide/vod" },
-    { name: "快资源播", url: "http://www.kuaibozy.com/api.php/provide/vod" },
-    { name: "百度资源", url: "http://api.apibdzy.com/api.php/provide/vod" },
-    { name: "艾旦影视", url: "http://lovedan.net/api.php/provide/vod" },
-    { name: "飘花电影", url: "http://www.zzrhgg.com/api.php/provide/vod" },
-    { name: "飘花|点播 (JSON)", url: "http://www.ahjiuman.com/api.php/provide/vod/at/json" },
-    { name: "网民电影", url: "http://prinevillesda.org/api.php/provide/vod" },
-    { name: "袜丝资源", url: "http://siwazyw.cc/api.php/provide/vod" },
-    { name: "天空资源", url: "http://m3u8.tiankongapi.com/api.php/provide/vod/from/tkm3u8" },
-    { name: "海外看资源", url: "http://haiwaikan.com/api.php/provide/vod" },
-    { name: "刺桐|点播", url: "http://ys9.cttv.vip/api.php/provide/vod/" },
-    { name: "官网|点播", url: "http://gwcms.cttv.vip/api.php/provide/vod/" },
-    { name: "非凡|点播", url: "http://cj.ffzyapi.com/api.php/provide/vod/" },
-    { name: "最大|点播", url: "http://zuidazy.me/api.php/provide/vod/" },
-  ],
-  HIDE_BUILTIN_ADULT_APIS: true,
-  PROXY_URL: "/api/proxy"
+const API_SITES = {
+    testSource: {
+        api: 'https://www.example.com/api.php/provide/vod',
+        name: '空内容测试源',
+        adult: true
+    }
+    //ARCHIVE https://telegra.ph/APIs-08-12
 };
 
 // 定义合并方法
